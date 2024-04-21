@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Movie Details{% endblock %}
+
+{% block content %}
+<div class="content">
+    <h1 class="heading">Movie Details</h1>
+    
+    <p class="description">Here are the details of your movie.<br>
+  
+        <ul>
+            <li>{{data["title"]}}</li>
+            <li>{{data["poster_path"]}} </li>
+            <li>{{data["release_date"][0:4]}}</li>
+            <li>{{data["overview"]}}</li>
+        </ul>
+        
+  </p>
+
+</div>
+{% endblock %}

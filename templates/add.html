@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Movie{% endblock %}
+
+{% block content %}
+<div class="content">
+    <h1 class="heading">Add a Movie</h1>
+    
+    <p class="description">Add a new movie to the top 10.</p>
+
+    {% from 'bootstrap4/form.html' import render_form %}
+    {{ render_form(form, action=url_for('add'), method='post') }}
+
+</div>
+{% endblock %}
